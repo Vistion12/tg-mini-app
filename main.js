@@ -1,7 +1,7 @@
 import { Telegraf, Markup } from "telegraf";
 import { message } from "telegraf/filters";
-
-const token = '7883628292:AAECvbKulyA15d6KSbAqkrf-DzL_o0ntfUw';
+import 'dotenv/config';
+const token = process.env.BOT_TOKEN;
 const webAppUrl = 'https://tg-web-app-5c16e.web.app/';
 const bot = new Telegraf(token);
 
